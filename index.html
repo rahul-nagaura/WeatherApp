@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Add b -->
+    <div class="main">
+        <div class="fixed-page">
+            <h1>Weather App</h1>
+            <div class="tab-container">
+                <p class="tab" data-yourWeather>Your Weather</p>
+                <p class="tab" data-searchWeather>Search weather</p>
+            </div>
+        </div>
+        <div class="first-page active">
+            <img src="images/location.png" width="100" height="100" alt="">
+            <h1>Grant Location Access</h1>
+            <p>Allow Access to Get Weather Information</p>
+            <button btn-access>Grant Access</button>
+        </div>
+        <div class="last-page active">
+            <input type="search" id="ENter-City" placeholder="Search for city...">
+            <img src="/images/search.png" id="City_image" height="36" width="36" alt="">
+        </div>
+        <div class="second-page active">
+            <p>
+                <img src="/images/" alt="">
+            </p>
+            <p data-city></p>
+            <img src="" alt="">
+            <h1 temperaure></h1>
+            <div class="container">
+                <div class="container-tab">
+                    <img src="/images/wind.png" width="150" height="150" alt="">
+                    <h2>WINDSPEED</h2>
+                    <h3 wind-speed>hi</h3>
+                </div>
+                <div class="container-tab">
+                    <img src="/images/humidity.png" alt="">
+                    <h2>HUMIDITY</h2>
+                    <h3 humidity-data></h3>
+                </div>
+                <div class="container-tab">
+                    <img src="/images/cloud.png" alt="">
+                    <h2>CLOUDS</h2>
+                    <h3 clouds-data></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
